@@ -10,7 +10,6 @@
 
 namespace Geniem;
 
-
 if ( class_exists( 'acf' ) ) {
     // Acf is activated add filter.
     add_filter( 'wp_insert_post_data', __NAMESPACE__ . '\\filter_handler', 1, 2 );
@@ -18,8 +17,6 @@ if ( class_exists( 'acf' ) ) {
     // Acf is not activated, show warning.
     add_action( 'admin_notices', __NAMESPACE__ . '\\error_acf_not_activated' );
 }
-
-
 
 /**
  * Runs before post is saved into database.
@@ -68,6 +65,3 @@ function error_acf_not_activated() {
 
     printf( '<div class="%1$s"><p>%2$s</p></div>', esc_attr( $class ), esc_html( $message ) );
 }
-
-
-
