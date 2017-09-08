@@ -10,7 +10,6 @@ This
 
 ## Requirements
 [Advanced Custom Fields](https://advancedcustomfields.com) - This plugin does absolutely nothing if ACF is not installed.
-This is super useful with [Dustpress](https://github.com/devgeniem/dustpress) but works without it.
 
 ## Example
 1. User creates page with some page template, for example 'Page with Sidebar'.
