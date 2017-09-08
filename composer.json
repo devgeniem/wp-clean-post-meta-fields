@@ -1,0 +1,19 @@
+{
+    "name": "devgeniem/wp-clean-post-meta-fields",
+    "type": "wordpress-plugin",
+    "description": "WordPress plugin that keeps your post meta clean from unrelevant custom field data",
+    "authors": [
+        {
+            "name": "Anttoni Lahtinen",
+            "email": "anttoni.lahtinen@geniem.com",
+            "homepage": "http://geniem.com/",
+            "role": "Developer"
+        }
+    ],
+    "license": "GPL-3.0",
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.4",
+        "composer/installers": ">=1.0.12"
+    }
+}
