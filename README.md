@@ -4,6 +4,7 @@
 
 This plugin deletes Advanced Custom Field data from unrelevant templates after the template is changed.
 
+
 This
 
     - Keeps the post meta clean from unrelevant data.
@@ -30,7 +31,8 @@ This keeps the post meta clean and makes sure only the relevant data exists.
 
 Now go on, write those D.R.Y templates and enjoy your clean post meta!
 
-*NOTE* Please support revisions in your custom post types that are using templates so users does not lose data.
+**NOTE:** Please support revisions in your custom post types that are using templates, so users do not lose data.
+
 
 ## Maintainers
 
