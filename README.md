@@ -4,11 +4,10 @@
 
 This plugin deletes Advanced Custom Field data from unrelevant templates after template change.
 
-This
-
-    - Keeps the post meta clean from unrelevant data
-    - Avoids 'leaks' where data meant for different page template is displayed on other template.
-    - And thus opens up the possibility to write D.R.Y templates.
+This:
+  - Keeps the post meta clean from unrelevant data
+  - Avoids 'leaks' where data meant for different page template is displayed on other template.
+  - And thus opens up the possibility to write D.R.Y templates.
 
 ## Requirements
 [Advanced Custom Fields](https://advancedcustomfields.com) - This plugin does absolutely nothing if ACF is not installed.
@@ -26,7 +25,7 @@ By removing the ACF data on template change we keep the post meta clean and make
 
 Now go on and write those D.R.Y templates and enjoy your clean post meta!
 
-*Note* please support revisions in your custom post types that are using templates so users does not lose data.
+**NOTE:** Please support revisions in your custom post types that are using templates so users do not lose data.
 
 ## Maintainers
 
