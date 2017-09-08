@@ -3,7 +3,9 @@
 # WP Clean Meta Fields
 
 This plugin deletes Advanced Custom Field data from unrelevant templates after template change.
+
 This
+
     - Keeps the post meta clean from unrelevant data
     - Avoids 'leaks' where data meant for different page template is displayed on other template.
     - And thus opens up the possibility to write D.R.Y templates.
