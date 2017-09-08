@@ -2,31 +2,35 @@
 
 # WP Clean Meta Fields
 
-This plugin deletes Advanced Custom Field data from unrelevant templates after template change.
+This plugin deletes Advanced Custom Field data from unrelevant templates after the template is changed.
 
 This
 
-    - Keeps the post meta clean from unrelevant data
-    - Avoids 'leaks' where data meant for different page template is displayed on other template.
+    - Keeps the post meta clean from unrelevant data.
+    - Avoids 'leaks' where data that is meant for a different page template is displayed by accident.
     - And thus opens up the possibility to write D.R.Y templates.
 
 ## Requirements
-[Advanced Custom Fields](https://advancedcustomfields.com) - This plugin does absolutely nothing if ACF is not installed.
+[Advanced Custom Fields](https://advancedcustomfields.com) - This plugin does absolutely nothing if Advanced Custom Fields (ACF) is not installed.
 
 ## Example
-1. User creates page with some page template, for example 'Page with Sidebar'.
-2. User inputs data to that template's custom metaboxes created with Advanced Custom Fields (ACF).
-3. User saves the content and thus data in ACF metaboxes is saved into post meta.
-4. User changes the template for something different and the metaboxes change accordingly.
-5. User stores data again but the old data is still there in the post meta.
+1. User creates a page with any template, for example 'Page with Sidebar'.
+2. User inputs data to that template's custom metaboxes created with ACF.
+3. User saves the content and thus data in ACF metaboxes is saved to the post meta.
+4. User changes the template to a template that does not include sidebar.
+5. User stores data again but the old sidebar-related data is still there in the post meta.
 
-In theme we have written templates that use the same base so that in theme template we check for data stored in sidebar based metabox and show sidebar if that data is set: Because the data still exists in the post meta the sidebar is displayed even the user changed the post template.
+### The problem
+In the theme we have written templates that use the same base so that in the template we check if any sidebar-related data exists, and show the sidebar if it does: because the data still exists in the post meta, the sidebar is displayed even though the user has changed the template.
 
-By removing the ACF data on template change we keep the post meta clean and make sure only the data that is relevant is used.
 
-Now go on and write those D.R.Y templates and enjoy your clean post meta!
+### Solution
+If the template has been changed, the plugin removes all ACF related post meta on post save. After this, only the current template's data is stored back.
+This keeps the post meta clean and makes sure only the relevant data exists.
 
-*Note* please support revisions in your custom post types that are using templates so users does not lose data.
+Now go on, write those D.R.Y templates and enjoy your clean post meta!
+
+*NOTE* Please support revisions in your custom post types that are using templates so users does not lose data.
 
 ## Maintainers
 
