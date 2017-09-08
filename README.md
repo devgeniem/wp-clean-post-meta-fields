@@ -2,7 +2,7 @@
 
 # WP Clean Meta Fields
 
-This plugin deletes Advanced Custom Field data from unused templates after template change.
+This plugin deletes Advanced Custom Field data from unrelevant templates after template change.
 This
     - Keeps the post meta clean from unrelevant data
     - Avoids 'leaks' where data meant for different page template is displayed on other template.
@@ -13,11 +13,11 @@ This
 This is super useful with [Dustpress](https://github.com/devgeniem/dustpress) but works without it.
 
 ## Example
-- User creates page with some page template, for example 'Page with Sidebar'.
-- User inputs data to that template's custom metaboxes created with Advanced Custom Fields (ACF).
-- User saves the content and thus data in ACF metaboxes is saved into post meta.
-- User changes the template for something different and the metaboxes change accordingly.
-- User stores data again but the old data is still there in the post meta.
+1. User creates page with some page template, for example 'Page with Sidebar'.
+2. User inputs data to that template's custom metaboxes created with Advanced Custom Fields (ACF).
+3. User saves the content and thus data in ACF metaboxes is saved into post meta.
+4. User changes the template for something different and the metaboxes change accordingly.
+5. User stores data again but the old data is still there in the post meta.
 
 In theme we have written templates that use the same base so that in theme template we check for data stored in sidebar based metabox and show sidebar if that data is set: Because the data still exists in the post meta the sidebar is displayed even the user changed the post template.
 

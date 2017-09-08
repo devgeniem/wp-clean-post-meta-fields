@@ -20,7 +20,7 @@ if ( class_exists( 'acf' ) ) {
 
 /**
  * Runs before post is saved into database.
- * If post template change is detected we get all fields stored for current pos and
+ * If post template change is detected we get all fields stored for current post and
  * delete them from post meta.
  * After this the data from current template's fields is stored back there automatically.
  * Codex: https://developer.wordpress.org/reference/hooks/wp_insert_post_data/
