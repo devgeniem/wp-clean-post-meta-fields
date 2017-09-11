@@ -43,9 +43,11 @@ function filter_handler( $data, $postarr ) {
         if ( $old_page_template !== $new_page_template ) {
             // Get existing fields.
             $post_fields = get_fields( $post_id );
-            foreach ( $post_fields as $key => $field ) {
-                delete_post_meta( $post_id, $key );
-                delete_post_meta( $post_id, '_' . $key );
+            if ( ! empty ( $post_fields )  ) {
+                foreach ( $post_fields as $key => $field ) {
+                    delete_post_meta( $post_id, $key );
+                    delete_post_meta( $post_id, '_' . $key );
+                }
             }
         }
     }
